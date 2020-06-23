@@ -150,8 +150,7 @@ class LoginFieldsState extends State<LoginFields> {
     wp.WordPress wordPress = new wp.WordPress(
       baseUrl: 'https://redvital.com/dev/',
       authenticator: wp.WordPressAuthenticator.JWT,
-      adminName: '',
-      adminKey: '',
+     
     );
 
     final response = wordPress.authenticateUser(username: _username, password: _password);
